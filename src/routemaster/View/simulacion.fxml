@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="620.0" prefWidth="1060.0" styleClass="simulacion-bg" stylesheets="@simulacion.css, @side-menu.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SimulacionController">
+   <left>
+      <fx:include source="side-menu.fxml" fx:id="sideMenu" />
+   </left>
+   <center>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="758.0" prefWidth="1184.0">
+         <children>
+            <VBox alignment="TOP_CENTER" layoutX="30.0" layoutY="40.0" prefWidth="740.0" spacing="22" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="40.0">
+               <children>
+                  <VBox alignment="CENTER" spacing="4">
+                     <children>
+                        <Text styleClass="sim-icon" text="▶️" />
+                        <Label styleClass="sim-title" text="Simulación de Entregas" />
+                        <Label styleClass="sim-subtitle" text="Ejecuta y monitorea las rutas en tiempo real" />
+                     </children>
+                  </VBox>
+
+                  <Separator styleClass="sim-separator" />
+
+                  <HBox alignment="CENTER_LEFT" spacing="14">
+                     <children>
+                        <Button fx:id="btnIniciar" mnemonicParsing="false" onAction="#handleIniciar" styleClass="btn-iniciar" text="   ▶️  Iniciar Simulación" />
+                        <Button fx:id="btnFinalizar" disable="true" mnemonicParsing="false" onAction="#handleFinalizar" styleClass="btn-finalizar" text="   ⏹  Detener" />
+                     </children>
+                  </HBox>
+
+                  <VBox fx:id="contenedorProgreso" spacing="10" styleClass="progresos-card">
+                     <children>
+                        <Label styleClass="progresos-title" text="Avance de Rutas" />
+                     </children>
+                  </VBox>
+
+                  <VBox spacing="8" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label styleClass="log-title" text="Registro de Eventos" />
+                        <ListView fx:id="listaEventos" prefHeight="180.0" styleClass="log-list" VBox.vgrow="ALWAYS" />
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+
+            <HBox alignment="CENTER_LEFT" spacing="12" styleClass="status-bar" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0">
+               <children>
+                  <Label styleClass="status-dot" text="●" />
+                  <Label fx:id="statusLabel" styleClass="status-text" text="Listo" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
+

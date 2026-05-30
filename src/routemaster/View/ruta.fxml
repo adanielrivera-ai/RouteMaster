@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="620.0" prefWidth="1060.0" styleClass="ruta-bg" stylesheets="@ruta.css, @side-menu.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RutaController">
+   <left>
+      <fx:include source="side-menu.fxml" fx:id="sideMenu" />
+   </left>
+   <center>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="758.0" prefWidth="1184.0">
+         <children>
+            <VBox alignment="TOP_CENTER" layoutX="30.0" layoutY="40.0" prefWidth="740.0" spacing="22" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="40.0">
+               <children>
+                  <VBox alignment="CENTER" spacing="4">
+                     <children>
+                        <Text styleClass="ruta-icon" text="🗺️" />
+                        <Label styleClass="ruta-title" text="Planificación de Rutas" />
+                        <Label styleClass="ruta-subtitle" text="Genera y revisa los planes de entrega" />
+                     </children>
+                  </VBox>
+
+                  <Separator styleClass="ruta-separator" />
+
+                  <HBox alignment="CENTER_LEFT" prefHeight="46.0" spacing="14">
+                     <children>
+                        <Label styleClass="control-label" text="Estrategia:" />
+                        <ComboBox fx:id="cmbEstrategia" prefWidth="220" styleClass="ruta-combo" />
+                        <Button fx:id="btnGenerar" mnemonicParsing="false" onAction="#handleGenerar" styleClass="btn-primary" text="   🚀  Planificar Rutas" />
+                     </children>
+                  </HBox>
+
+                  <TableView fx:id="tablaRutas" prefHeight="240.0" prefWidth="769.0" styleClass="ruta-table" VBox.vgrow="ALWAYS">
+                     <columns>
+                        <TableColumn fx:id="colId" prefWidth="60" text="ID" />
+                        <TableColumn fx:id="colRepartidor" prefWidth="160" text="Repartidor" />
+                        <TableColumn fx:id="colCantidad" prefWidth="110" text="Pedidos" />
+                        <TableColumn fx:id="colKm" prefWidth="110" text="Km Totales" />
+                        <TableColumn fx:id="colMinutos" prefWidth="120" text="Min. Estim." />
+                        <TableColumn fx:id="colEstado" prefWidth="120" text="Estado" />
+                     </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="USE_PREF_SIZE" />
+                     </columnResizePolicy>
+                  </TableView>
+
+                  <VBox fx:id="detallePanel" spacing="10" styleClass="detail-card" visible="false" managed="false">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" spacing="14">
+                           <children>
+                              <Label fx:id="lblDetalleTitulo" styleClass="detail-title" text="Detalle de Ruta" />
+                              <Label fx:id="lblMetricas" styleClass="detail-metrics" text="" />
+                           </children>
+                        </HBox>
+                        <ListView fx:id="listaPedidos" prefHeight="130.0" styleClass="detail-list" />
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+
+            <HBox alignment="CENTER_LEFT" spacing="12" styleClass="status-bar" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0">
+               <children>
+                  <Label styleClass="status-dot" text="●" />
+                  <Label fx:id="statusLabel" styleClass="status-text" text="Listo" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
+

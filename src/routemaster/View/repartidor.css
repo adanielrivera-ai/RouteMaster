@@ -1,0 +1,149 @@
+.root {
+    -fx-font-family: 'Segoe UI', 'System', sans-serif;
+}
+
+.repartidor-bg {
+    -fx-background-color: linear-gradient(to top right, #0f0c29, #302b63, #24243e);
+}
+
+.repartidor-icon {
+    -fx-font-size: 52;
+    -fx-fill: #b388ff;
+    -fx-effect: dropshadow(gaussian, rgba(179, 136, 255, 0.35), 20, 0.5, 0, 0);
+}
+
+.repartidor-title {
+    -fx-font-size: 30;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-padding: 4 0 0 0;
+}
+
+.repartidor-subtitle {
+    -fx-font-size: 14;
+    -fx-text-fill: rgba(255, 255, 255, 0.5);
+}
+
+.repartidor-separator {
+    -fx-background-color: rgba(255, 255, 255, 0.08);
+    -fx-pref-height: 1;
+    -fx-max-width: 600;
+}
+
+.table-title {
+    -fx-font-size: 16;
+    -fx-font-weight: bold;
+    -fx-text-fill: rgba(255, 255, 255, 0.85);
+}
+
+.contador-label {
+    -fx-font-size: 14;
+    -fx-text-fill: rgba(255, 255, 255, 0.45);
+    -fx-padding: 2 0 0 0;
+}
+
+.repartidor-table {
+    -fx-background-color: rgba(255, 255, 255, 0.04);
+    -fx-background-radius: 16;
+    -fx-border-color: rgba(255, 255, 255, 0.08);
+    -fx-border-radius: 16;
+    -fx-border-width: 1.5;
+    -fx-padding: 0;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 24, 0.3, 0, 8);
+}
+
+.repartidor-table .column-header-background {
+    -fx-background-color: rgba(255, 255, 255, 0.04);
+    -fx-background-radius: 16 16 0 0;
+    -fx-padding: 4 0;
+}
+
+.repartidor-table .column-header {
+    -fx-background-color: transparent;
+    -fx-border-color: rgba(255, 255, 255, 0.06);
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 14 10;
+}
+
+.repartidor-table .column-header .label {
+    -fx-text-fill: rgba(255, 255, 255, 0.7);
+    -fx-font-size: 13;
+    -fx-font-weight: bold;
+}
+
+.repartidor-table .table-row-cell {
+    -fx-background-color: transparent;
+    -fx-border-color: rgba(255, 255, 255, 0.03);
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 6 0;
+}
+
+.repartidor-table .table-row-cell:odd {
+    -fx-background-color: rgba(255, 255, 255, 0.02);
+}
+
+.repartidor-table .table-row-cell:hover {
+    -fx-background-color: rgba(179, 136, 255, 0.08);
+}
+
+.repartidor-table .table-row-cell:selected {
+    -fx-background-color: rgba(179, 136, 255, 0.2);
+}
+
+.repartidor-table .table-cell {
+    -fx-text-fill: rgba(255, 255, 255, 0.85);
+    -fx-font-size: 13;
+    -fx-padding: 10 10;
+    -fx-alignment: center-left;
+}
+
+.repartidor-table .table-cell:selected {
+    -fx-text-fill: white;
+}
+
+.repartidor-table .placeholder {
+    -fx-text-fill: rgba(255, 255, 255, 0.3);
+}
+
+.btn-primary {
+    -fx-background-color: linear-gradient(to right, #b388ff, #7c4dff);
+    -fx-background-radius: 14;
+    -fx-text-fill: white;
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+    -fx-padding: 14 28;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(179, 136, 255, 0.35), 20, 0.4, 0, 8);
+}
+
+.btn-primary:hover {
+    -fx-background-color: linear-gradient(to right, #c4a0ff, #916aff);
+    -fx-effect: dropshadow(gaussian, rgba(179, 136, 255, 0.55), 30, 0.5, 0, 12);
+    -fx-translate-y: -2;
+}
+
+.btn-primary:pressed {
+    -fx-background-color: #6c3cd6;
+    -fx-effect: dropshadow(gaussian, rgba(179, 136, 255, 0.2), 10, 0.3, 0, 3);
+    -fx-translate-y: 0;
+}
+
+.status-bar {
+    -fx-background-color: rgba(0, 0, 0, 0.25);
+    -fx-background-radius: 12;
+    -fx-padding: 10 20;
+    -fx-border-color: rgba(255, 255, 255, 0.06);
+    -fx-border-radius: 12;
+    -fx-border-width: 1;
+}
+
+.status-dot {
+    -fx-font-size: 10;
+    -fx-text-fill: #69f0ae;
+    -fx-effect: dropshadow(gaussian, rgba(105, 240, 174, 0.5), 6, 0.5, 0, 0);
+}
+
+.status-text {
+    -fx-font-size: 13;
+    -fx-text-fill: rgba(255, 255, 255, 0.5);
+}

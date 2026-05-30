@@ -1,0 +1,95 @@
+.root {
+    -fx-font-family: 'Segoe UI', 'System', sans-serif;
+}
+
+.side-menu {
+    -fx-background-color: linear-gradient(to bottom, #0a0a1a, #12102a);
+    -fx-border-color: rgba(255, 255, 255, 0.06);
+    -fx-border-width: 0 1 0 0;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 30, 0.3, 5, 0);
+}
+
+.nav-header {
+    -fx-padding: 28 20 18 20;
+}
+
+.nav-logo {
+    -fx-font-size: 44;
+    -fx-fill: #b388ff;
+    -fx-effect: dropshadow(gaussian, rgba(179, 136, 255, 0.3), 16, 0.5, 0, 0);
+}
+
+.nav-brand {
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.nav-version {
+    -fx-font-size: 12;
+    -fx-text-fill: rgba(255, 255, 255, 0.35);
+}
+
+.nav-separator {
+    -fx-background-color: rgba(255, 255, 255, 0.06);
+    -fx-pref-height: 1;
+    -fx-max-width: Infinity;
+}
+
+.nav-items {
+    -fx-padding: 12 12;
+}
+
+.nav-btn {
+    -fx-background-color: transparent;
+    -fx-background-radius: 12;
+    -fx-text-fill: rgba(255, 255, 255, 0.65);
+    -fx-font-size: 15;
+    -fx-font-weight: 600;
+    -fx-alignment: center-left;
+    -fx-cursor: hand;
+    -fx-padding: 0 14;
+    -fx-border-color: transparent;
+    -fx-border-width: 1.5;
+    -fx-border-radius: 12;
+}
+
+.nav-btn:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.06);
+    -fx-text-fill: rgba(255, 255, 255, 0.9);
+}
+
+.nav-btn:pressed {
+    -fx-background-color: rgba(179, 136, 255, 0.15);
+}
+
+.nav-btn-active {
+    -fx-background-color: rgba(179, 136, 255, 0.18);
+    -fx-border-color: rgba(179, 136, 255, 0.4);
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(179, 136, 255, 0.15), 8, 0.3, 0, 0);
+}
+
+.nav-btn-active:hover {
+    -fx-background-color: rgba(179, 136, 255, 0.25);
+}
+
+.nav-user {
+    -fx-padding: 16 20;
+    -fx-background-color: rgba(0, 0, 0, 0.2);
+}
+
+.nav-avatar {
+    -fx-font-size: 28;
+}
+
+.nav-user-name {
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-text-fill: rgba(255, 255, 255, 0.8);
+}
+
+.nav-user-role {
+    -fx-font-size: 12;
+    -fx-text-fill: rgba(255, 255, 255, 0.35);
+}

@@ -1,0 +1,7 @@
+
+public enum RutaStrategy {
+    DISTANCIA_MAS_CORTA,
+    MENOR_TIEMPO_ESTIMADO,
+    PRIORIDAD_DE_PEDIDOS
+}
+

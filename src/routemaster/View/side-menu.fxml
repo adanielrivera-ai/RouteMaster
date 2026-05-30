@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefWidth="230" spacing="0" styleClass="side-menu" stylesheets="@side-menu.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SideMenuController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="140" spacing="6" styleClass="nav-header">
+         <children>
+            <Text styleClass="nav-logo" text="🚚" />
+            <Label styleClass="nav-brand" text="LogiPack" />
+            <Label styleClass="nav-version" text="Sistema de Repartos" />
+         </children>
+      </VBox>
+
+      <Separator styleClass="nav-separator" />
+
+      <VBox spacing="4" styleClass="nav-items">
+         <children>
+            <Button fx:id="btnDashboard" maxWidth="Infinity" mnemonicParsing="false" onAction="#handleNav" prefHeight="46" styleClass="nav-btn" text="   📊  Dashboard" />
+            <Button fx:id="btnPedidos" maxWidth="Infinity" mnemonicParsing="false" onAction="#handleNav" prefHeight="46" styleClass="nav-btn" text="   📦  Pedidos" />
+            <Button fx:id="btnRepartidores" maxWidth="Infinity" mnemonicParsing="false" onAction="#handleNav" prefHeight="46" styleClass="nav-btn" text="   👥  Repartidores" />
+            <Button fx:id="btnRutas" maxWidth="Infinity" mnemonicParsing="false" onAction="#handleNav" prefHeight="46" styleClass="nav-btn" text="   🗺️  Rutas" />
+            <Button fx:id="btnSimulacion" maxWidth="Infinity" mnemonicParsing="false" onAction="#handleNav" prefHeight="46" styleClass="nav-btn" text="   ▶️  Simulación" />
+         </children>
+      </VBox>
+
+      <Region VBox.vgrow="ALWAYS" />
+
+      <Separator styleClass="nav-separator" />
+
+      <HBox alignment="CENTER_LEFT" spacing="12" styleClass="nav-user">
+         <children>
+            <Label styleClass="nav-avatar" text="👤" />
+            <VBox spacing="1">
+               <children>
+                  <Label styleClass="nav-user-name" text="Administrador" />
+                  <Label styleClass="nav-user-role" text="admin@logipack" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>
+

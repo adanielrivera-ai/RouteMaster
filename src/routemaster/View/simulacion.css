@@ -1,0 +1,190 @@
+.root {
+    -fx-font-family: 'Segoe UI', 'System', sans-serif;
+}
+
+.simulacion-bg {
+    -fx-background-color: linear-gradient(to top right, #0f0c29, #302b63, #24243e);
+}
+
+.sim-icon {
+    -fx-font-size: 52;
+    -fx-fill: #b388ff;
+    -fx-effect: dropshadow(gaussian, rgba(179, 136, 255, 0.35), 20, 0.5, 0, 0);
+}
+
+.sim-title {
+    -fx-font-size: 30;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-padding: 4 0 0 0;
+}
+
+.sim-subtitle {
+    -fx-font-size: 14;
+    -fx-text-fill: rgba(255, 255, 255, 0.5);
+}
+
+.sim-separator {
+    -fx-background-color: rgba(255, 255, 255, 0.08);
+    -fx-pref-height: 1;
+    -fx-max-width: 600;
+}
+
+.btn-iniciar {
+    -fx-background-color: linear-gradient(to right, #69f0ae, #00c853);
+    -fx-background-radius: 14;
+    -fx-text-fill: white;
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+    -fx-padding: 14 28;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(105, 240, 174, 0.35), 20, 0.4, 0, 8);
+}
+
+.btn-iniciar:hover {
+    -fx-background-color: linear-gradient(to right, #8ef7c0, #00e676);
+    -fx-effect: dropshadow(gaussian, rgba(105, 240, 174, 0.55), 30, 0.5, 0, 12);
+    -fx-translate-y: -2;
+}
+
+.btn-iniciar:pressed {
+    -fx-background-color: #00c853;
+    -fx-translate-y: 0;
+}
+
+.btn-iniciar:disabled {
+    -fx-opacity: 0.5;
+    -fx-effect: none;
+}
+
+.btn-finalizar {
+    -fx-background-color: rgba(255, 255, 255, 0.06);
+    -fx-background-radius: 14;
+    -fx-border-color: rgba(255, 82, 82, 0.5);
+    -fx-border-radius: 14;
+    -fx-border-width: 1.5;
+    -fx-text-fill: #ff5252;
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+    -fx-padding: 14 28;
+    -fx-cursor: hand;
+}
+
+.btn-finalizar:hover {
+    -fx-background-color: rgba(255, 82, 82, 0.12);
+    -fx-border-color: #ff5252;
+    -fx-effect: dropshadow(gaussian, rgba(255, 82, 82, 0.2), 18, 0.3, 0, 8);
+    -fx-translate-y: -2;
+}
+
+.btn-finalizar:pressed {
+    -fx-background-color: rgba(255, 82, 82, 0.2);
+    -fx-translate-y: 0;
+}
+
+.btn-finalizar:disabled {
+    -fx-opacity: 0.35;
+    -fx-effect: none;
+}
+
+.progresos-card {
+    -fx-background-color: rgba(255, 255, 255, 0.06);
+    -fx-background-radius: 16;
+    -fx-border-color: rgba(255, 255, 255, 0.1);
+    -fx-border-radius: 16;
+    -fx-border-width: 1.5;
+    -fx-padding: 18 22 16 22;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 20, 0.3, 0, 6);
+}
+
+.progresos-title {
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-padding: 0 0 4 0;
+}
+
+.ruta-progress-row {
+    -fx-padding: 6 0;
+    -fx-alignment: center-left;
+    -fx-spacing: 12;
+}
+
+.repartidor-label {
+    -fx-font-size: 14;
+    -fx-font-weight: 600;
+    -fx-text-fill: rgba(255, 255, 255, 0.85);
+    -fx-min-width: 150;
+}
+
+.ruta-progress {
+    -fx-min-width: 300;
+    -fx-pref-height: 20;
+    -fx-background-color: rgba(255, 255, 255, 0.08);
+    -fx-background-radius: 10;
+    -fx-accent: linear-gradient(to right, #b388ff, #7c4dff);
+}
+
+.ruta-progress .bar {
+    -fx-background-radius: 10;
+}
+
+.ruta-progress .track {
+    -fx-background-radius: 10;
+    -fx-background-color: rgba(255, 255, 255, 0.08);
+}
+
+.estado-label {
+    -fx-font-size: 13;
+    -fx-font-weight: bold;
+    -fx-min-width: 110;
+}
+
+.log-title {
+    -fx-font-size: 15;
+    -fx-font-weight: bold;
+    -fx-text-fill: rgba(255, 255, 255, 0.85);
+}
+
+.log-list {
+    -fx-background-color: rgba(0, 0, 0, 0.3);
+    -fx-background-radius: 12;
+    -fx-border-color: rgba(255, 255, 255, 0.06);
+    -fx-border-radius: 12;
+    -fx-border-width: 1;
+    -fx-padding: 4;
+    -fx-font-family: 'Consolas', 'Courier New', monospace;
+}
+
+.log-list .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: rgba(255, 255, 255, 0.75);
+    -fx-font-size: 12;
+    -fx-padding: 5 12;
+    -fx-border-color: rgba(255, 255, 255, 0.03);
+    -fx-border-width: 0 0 1 0;
+}
+
+.log-list .list-cell:odd {
+    -fx-background-color: rgba(255, 255, 255, 0.015);
+}
+
+.status-bar {
+    -fx-background-color: rgba(0, 0, 0, 0.25);
+    -fx-background-radius: 12;
+    -fx-padding: 10 20;
+    -fx-border-color: rgba(255, 255, 255, 0.06);
+    -fx-border-radius: 12;
+    -fx-border-width: 1;
+}
+
+.status-dot {
+    -fx-font-size: 10;
+    -fx-text-fill: #69f0ae;
+    -fx-effect: dropshadow(gaussian, rgba(105, 240, 174, 0.5), 6, 0.5, 0, 0);
+}
+
+.status-text {
+    -fx-font-size: 13;
+    -fx-text-fill: rgba(255, 255, 255, 0.5);
+}

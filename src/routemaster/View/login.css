@@ -1,0 +1,91 @@
+.root {
+    -fx-font-family: 'Segoe UI', 'System', sans-serif;
+}
+
+.anchor-bg {
+    -fx-background-color: linear-gradient(to top right, #0f0c29, #302b63, #24243e);
+}
+
+.login-card {
+    -fx-background-color: rgba(255, 255, 255, 0.08);
+    -fx-background-radius: 30;
+    -fx-border-color: rgba(255, 255, 255, 0.12);
+    -fx-border-width: 1.5;
+    -fx-border-radius: 30;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 70, 0.4, 0, 25);
+    -fx-padding: 60 64 56 64;
+    -fx-spacing: 26;
+}
+
+.login-icon {
+    -fx-font-size: 72;
+    -fx-fill: #b388ff;
+    -fx-effect: dropshadow(gaussian, rgba(179, 136, 255, 0.4), 24, 0.5, 0, 0);
+}
+
+.login-title {
+    -fx-font-size: 34;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-padding: 10 0 6 0;
+}
+
+.login-subtitle {
+    -fx-font-size: 15;
+    -fx-text-fill: rgba(255, 255, 255, 0.55);
+    -fx-padding: 0 0 10 0;
+}
+
+.input-field {
+    -fx-background-color: rgba(255, 255, 255, 0.06);
+    -fx-background-radius: 16;
+    -fx-border-color: rgba(255, 255, 255, 0.1);
+    -fx-border-radius: 16;
+    -fx-border-width: 1.5;
+    -fx-padding: 17 22;
+    -fx-font-size: 16;
+    -fx-prompt-text-fill: rgba(255, 255, 255, 0.3);
+    -fx-text-fill: white;
+    -fx-effect: null;
+}
+
+.input-field:focused {
+    -fx-border-color: #b388ff;
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-effect: dropshadow(gaussian, rgba(179, 136, 255, 0.2), 18, 0.3, 0, 0);
+}
+
+.input-field:hover {
+    -fx-border-color: rgba(255, 255, 255, 0.25);
+}
+
+.login-button {
+    -fx-background-color: linear-gradient(to right, #b388ff, #7c4dff);
+    -fx-background-radius: 16;
+    -fx-text-fill: white;
+    -fx-font-size: 17;
+    -fx-font-weight: bold;
+    -fx-padding: 17 0;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(179, 136, 255, 0.35), 20, 0.4, 0, 8);
+}
+
+.login-button:hover {
+    -fx-background-color: linear-gradient(to right, #c4a0ff, #916aff);
+    -fx-effect: dropshadow(gaussian, rgba(179, 136, 255, 0.55), 30, 0.5, 0, 12);
+    -fx-translate-y: -2;
+}
+
+.login-button:pressed {
+    -fx-background-color: #6c3cd6;
+    -fx-effect: dropshadow(gaussian, rgba(179, 136, 255, 0.2), 10, 0.3, 0, 3);
+    -fx-translate-y: 0;
+}
+
+.message-label {
+    -fx-font-size: 14;
+    -fx-font-weight: 600;
+    -fx-padding: 6 0 0 0;
+    -fx-alignment: center;
+    -fx-max-width: Infinity;
+}

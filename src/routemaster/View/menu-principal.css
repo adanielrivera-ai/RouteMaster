@@ -1,0 +1,138 @@
+.root {
+    -fx-font-family: 'Segoe UI', 'System', sans-serif;
+}
+
+.menu-bg {
+    -fx-background-color: linear-gradient(to top right, #0f0c29, #302b63, #24243e);
+}
+
+.menu-icon {
+    -fx-font-size: 56;
+    -fx-fill: #b388ff;
+    -fx-effect: dropshadow(gaussian, rgba(179, 136, 255, 0.35), 20, 0.5, 0, 0);
+}
+
+.menu-title {
+    -fx-font-size: 32;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-padding: 4 0 0 0;
+}
+
+.menu-subtitle {
+    -fx-font-size: 14;
+    -fx-text-fill: rgba(255, 255, 255, 0.5);
+}
+
+.menu-separator {
+    -fx-background-color: rgba(255, 255, 255, 0.08);
+    -fx-pref-height: 1;
+    -fx-max-width: 600;
+}
+
+.menu-card {
+    -fx-background-color: rgba(255, 255, 255, 0.06);
+    -fx-background-radius: 20;
+    -fx-border-color: rgba(255, 255, 255, 0.1);
+    -fx-border-width: 1.5;
+    -fx-border-radius: 20;
+    -fx-text-fill: white;
+    -fx-font-size: 18;
+    -fx-font-weight: 600;
+    -fx-alignment: center;
+    -fx-cursor: hand;
+    -fx-content-display: top;
+    -fx-padding: 20;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 30, 0.3, 0, 10);
+    -fx-transition: all 0.3s ease;
+}
+
+.menu-card:hover {
+    -fx-background-color: rgba(179, 136, 255, 0.15);
+    -fx-border-color: rgba(179, 136, 255, 0.35);
+    -fx-effect: dropshadow(gaussian, rgba(179, 136, 255, 0.25), 35, 0.4, 0, 15);
+    -fx-translate-y: -3;
+}
+
+.menu-card:pressed {
+    -fx-background-color: rgba(179, 136, 255, 0.25);
+    -fx-border-color: rgba(179, 136, 255, 0.5);
+    -fx-translate-y: 0;
+    -fx-effect: dropshadow(gaussian, rgba(179, 136, 255, 0.15), 15, 0.3, 0, 5);
+}
+
+.strategy-label {
+    -fx-font-size: 15;
+    -fx-text-fill: rgba(255, 255, 255, 0.7);
+    -fx-font-weight: 600;
+}
+
+.strategy-combo {
+    -fx-background-color: rgba(255, 255, 255, 0.06);
+    -fx-background-radius: 12;
+    -fx-border-color: rgba(255, 255, 255, 0.12);
+    -fx-border-radius: 12;
+    -fx-border-width: 1.5;
+    -fx-padding: 8 12;
+    -fx-font-size: 14;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: rgba(255, 255, 255, 0.3);
+}
+
+.strategy-combo:focused {
+    -fx-border-color: #b388ff;
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-effect: dropshadow(gaussian, rgba(179, 136, 255, 0.2), 12, 0.3, 0, 0);
+}
+
+.strategy-combo .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-padding: 6 8;
+}
+
+.strategy-combo .list-view {
+    -fx-background-color: #1a1a3e;
+    -fx-background-radius: 12;
+    -fx-border-color: rgba(255, 255, 255, 0.1);
+    -fx-border-radius: 12;
+    -fx-padding: 4;
+}
+
+.strategy-combo .list-view .list-cell:hover {
+    -fx-background-color: rgba(179, 136, 255, 0.15);
+    -fx-background-radius: 8;
+}
+
+.strategy-combo .list-view .list-cell:selected {
+    -fx-background-color: rgba(179, 136, 255, 0.25);
+    -fx-background-radius: 8;
+}
+
+.strategy-combo .arrow-button {
+    -fx-background-color: transparent;
+}
+
+.strategy-combo .arrow {
+    -fx-background-color: rgba(255, 255, 255, 0.5);
+}
+
+.status-bar {
+    -fx-background-color: rgba(0, 0, 0, 0.25);
+    -fx-background-radius: 12;
+    -fx-padding: 10 20;
+    -fx-border-color: rgba(255, 255, 255, 0.06);
+    -fx-border-radius: 12;
+    -fx-border-width: 1;
+}
+
+.status-dot {
+    -fx-font-size: 10;
+    -fx-text-fill: #69f0ae;
+    -fx-effect: dropshadow(gaussian, rgba(105, 240, 174, 0.5), 6, 0.5, 0, 0);
+}
+
+.status-text {
+    -fx-font-size: 13;
+    -fx-text-fill: rgba(255, 255, 255, 0.5);
+}
